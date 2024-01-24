@@ -1,0 +1,6 @@
+jupyter-book>=0.15.1
+sphinxcontrib-kroki
+sphinx-book-theme
+sphinx-tippy
+sphinx-proof
+docutils

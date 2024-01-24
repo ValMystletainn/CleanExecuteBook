@@ -1,0 +1,84 @@
+/* left sidebar: 1. seamless scroll bar 2. hide logo 3. change background color */
+
+/* make the scrollbar of left sidebar seamless */
+div::-webkit-scrollbar {
+    width: 1px;
+    height: 0px;
+}
+
+.sidebar-primary-item .navbar-brand.logo{
+    display: none;
+}
+
+.bd-sidebar-primary {
+    background-color: var(--pst-color-surface);
+}
+
+/* Make the page full of avaliabe screen and the main article wider */
+
+.bd-page-width {
+    max-width: 100%;  /* default is 88rem */
+}
+
+.bd-main .bd-content .bd-article-container {
+    max-width: 80em;  /* default is 60em */
+}
+
+/* Make the secondary bar elements in vertical direction */
+
+.bd-sidebar-secondary .sidebar-secondary-items {
+    display: block;
+}
+
+/* Hide some buttons to fit the responsive design */
+
+@media (min-width: 992px) {
+    label.sidebar-toggle.primary-toggle {
+        display: none;
+    }
+}
+
+.theme-switch-button {
+    display: none;
+}
+
+.article-header-buttons {
+    display: flex;
+}
+
+/* Hide article header in screen */
+
+@media (min-width: 992px) {
+    .bd-header-article {
+        display: none;
+    }
+}
+
+/* Change tippy hover preview color */
+
+.tippy-box {
+    background-color:var(--pst-color-background);
+    color: var(--pst-color-text-base);
+    border: 2px solid var(--pst-color-border);
+    border-radius: 5px;
+}
+
+.tippy-arrow {
+    display: none;
+    color: var(--pst-color-border);
+}
+
+/* caption style */
+
+.caption-number {
+    font-style: normal;
+    font-weight: bold;
+}
+
+table caption span.caption-number {
+    font-style: normal;
+}
+
+figcaption span.caption-number {
+    font-style: normal;
+}

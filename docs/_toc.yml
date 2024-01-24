@@ -1,0 +1,18 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index.md
+
+defaults:  # The defaults key will be applied to all chapters and sub-sections
+  titlesonly: True
+
+chapters:
+- file: quickstart/index.md
+
+- file: details/index.md
+  sections:
+  - file: details/markdown.md
+  - file: details/jupyter_notebook.md
+  - file: details/sphinx.md
+  - file: details/style.md
